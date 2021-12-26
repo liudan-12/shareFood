@@ -1,0 +1,11 @@
+<van-dialog id="van-dialog" />
+<!-- 数据双向绑定 -->
+<view class="share-title">请写下您的话语:</view>
+<van-cell-group>
+    <!-- 输入框 -->
+    <van-field label='标题：' model:value="{{shareTit}}" placeholder="请输入标题" border="{{ true }}" show-word-limit='true' maxlength='15' />
+    <van-field label='内容：' model:value="{{shaerPage}}" placeholder="请输入内容" border="{{ true }}" type='textarea' show-word-limit='true' maxlength='100' />
+</van-cell-group>
+<!-- 上传，accept上传格式 media ，max-size（byte 字节） -->
+<van-uploader accept='{{accept}}' class="van-uploader" file-list="{{ fileList }}" bind:delete="deleteImg" max-count="{{maxCount}}" upload-text="图片或视频" bind:after-read="afterRead" max-size='20971520' />
+<van-button class="van-button" type='primary' bindtap="shareDialog">分享故事</van-button>

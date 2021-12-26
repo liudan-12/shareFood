@@ -37,7 +37,7 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
-    "useIsolateContext": true,
+    "useIsolateContext": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [
@@ -53,8 +53,8 @@
     "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.4",
-  "appid": "wx9e6a1d9753d3584a",
+  "libVersion": "2.21.1",
+  "appid": "wxfba5d415b1a4c245",
   "projectname": "myDesign",
   "debugOptions": {
     "hidedInDevtools": []
@@ -67,6 +67,7 @@
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "list": []
